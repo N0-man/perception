@@ -3,8 +3,8 @@ import tempfile
 from pathlib import Path
 
 import pytest
-from perception_top_k.config import Config
-from perception_top_k.tracks import TrackBuilder, read_jsonl, build_tracks
+from perception_top_k.src.config import Config
+from perception_top_k.src.tracks import TrackBuilder, read_jsonl, build_tracks
 
 
 @pytest.fixture

@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import pytest
 
-from perception_top_k import crop
+from perception_top_k.src import crop
 
 
 class TestIsTooSmall:

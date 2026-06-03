@@ -3,7 +3,7 @@ import math
 import numpy as np
 import pytest
 
-from perception_top_k import scoring
+from perception_top_k.src import scoring
 
 
 class TestClamp01:

@@ -5,8 +5,8 @@ import cv2
 import numpy as np
 import pytest
 
-from perception_top_k import selection
-from perception_top_k.config import Config, ScoringConfig, SelectionConfig
+from perception_top_k.src import selection
+from perception_top_k.src.config import Config, ScoringConfig, SelectionConfig
 
 
 @pytest.fixture

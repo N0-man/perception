@@ -1,6 +1,6 @@
-from .config import Config, ScoringConfig, SelectionConfig
-from .tracks import TrackBuilder
-from . import bbox
+from .src.config import Config, ScoringConfig, SelectionConfig
+from .src.tracks import TrackBuilder
+from .src import bbox
 
 __all__ = [
     "Config",
@@ -12,5 +12,5 @@ __all__ = [
 
 
 def run(config: Config) -> int:
-    from .main import run as _run
+    from .src.main import run as _run
     return _run(config)
