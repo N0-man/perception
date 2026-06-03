@@ -1,0 +1,32 @@
+[property]
+gpu-id=0
+net-scale-factor=0.00392156862
+model-color-format=0
+
+onnx-file=../weights/vcor_yolo_cls_ds.onnx
+model-engine-file=../weights/vcor_yolo_cls_ds.onnx_b16_gpu0_fp16.engine
+labelfile-path=../vcor_labels.txt
+
+batch-size=16
+network-mode=2
+
+process-mode=2
+network-type=1
+infer-dims=3;320;320
+
+operate-on-gie-id=1
+gie-unique-id=2
+
+classifier-async-mode=0
+classifier-threshold=0.0
+output-blob-names=logits
+# classify every object on every frame, no skipping
+secondary-reinfer-interval=0
+output-tensor-meta=1
+
+workspace-size=1024
+
+## only classify cars(2), buses(5), trucks(7)
+operate-on-class-ids=2;5;7
+
+[class-attrs-all]
