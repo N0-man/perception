@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
-from . import bbox
-from .config import ContextConfig
+import src.bbox as bbox
+from src.config import ContextConfig
 
 
 def is_likely_foreground(

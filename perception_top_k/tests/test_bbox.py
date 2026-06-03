@@ -1,5 +1,5 @@
 import pytest
-from perception_top_k.src import bbox
+import src.bbox as bbox
 
 
 class TestWidth:

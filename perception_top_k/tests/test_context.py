@@ -1,6 +1,6 @@
 import pytest
-from perception_top_k.src import context
-from perception_top_k.src.config import ContextConfig
+import src.context as context
+from src.config import ContextConfig
 
 
 @pytest.fixture

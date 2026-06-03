@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 
 import pytest
-from perception_top_k.src.writers import write_tracks_jsonl
+from src.writers import write_tracks_jsonl
 
 
 class TestWriteTracksJsonl:

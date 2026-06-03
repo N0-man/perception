@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 from typing import Any, Dict, Iterator, List
 
-from .config import Config
-from . import metadata
+from src.config import Config
+import src.metadata as metadata
 
 
 class TrackBuilder:

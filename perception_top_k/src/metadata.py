@@ -1,8 +1,8 @@
 from typing import Any, Dict, List
 
-from . import bbox
-from . import context
-from .config import Config
+import src.bbox as bbox
+import src.context as context
+from src.config import Config
 
 
 def compute_object_metadata(

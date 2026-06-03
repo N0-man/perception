@@ -6,8 +6,8 @@ import cv2
 import numpy as np
 import pytest
 
-from perception_top_k.src import topk
-from perception_top_k.src.config import Config
+import src.topk as topk
+from src.config import Config
 
 
 class TestParseFrameIndex:

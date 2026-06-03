@@ -4,9 +4,9 @@ from typing import Any, Dict, Iterator, List, Optional
 
 import cv2
 
-from . import crop as crop_utils
-from . import selection
-from .config import Config
+import src.crop as crop_utils
+import src.selection as selection
+from src.config import Config
 
 
 def parse_frame_index(frame_uri: str) -> Optional[int]:

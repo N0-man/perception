@@ -5,10 +5,10 @@ from typing import Any, Dict, List, Optional, Tuple
 import cv2
 import numpy as np
 
-from . import bbox as bbox_utils
-from . import crop as crop_utils
-from . import scoring
-from .config import Config, ScoringConfig, SelectionConfig
+import src.bbox as bbox_utils
+import src.crop as crop_utils
+import src.scoring as scoring
+from src.config import Config, ScoringConfig, SelectionConfig
 
 
 def get_edge_penalty(observation: Dict[str, Any], config: Config) -> float:

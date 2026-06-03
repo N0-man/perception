@@ -3,10 +3,10 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from .config import Config
-from .tracks import build_tracks
-from .writers import write_tracks_jsonl
-from . import topk
+from src.config import Config
+from src.tracks import build_tracks
+from src.writers import write_tracks_jsonl
+import src.topk as topk
 
 
 def parse_args() -> argparse.Namespace:

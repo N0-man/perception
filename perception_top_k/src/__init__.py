@@ -1,13 +1,13 @@
-from .config import Config, ScoringConfig, SelectionConfig, ContextConfig
-from .tracks import TrackBuilder, build_tracks
-from .writers import write_tracks_jsonl
-from . import bbox
-from . import context
-from . import crop
-from . import metadata
-from . import scoring
-from . import selection
-from . import topk
+from src.config import Config, ScoringConfig, SelectionConfig, ContextConfig
+from src.tracks import TrackBuilder, build_tracks
+from src.writers import write_tracks_jsonl
+import src.bbox as bbox
+import src.context as context
+import src.crop as crop
+import src.metadata as metadata
+import src.scoring as scoring
+import src.selection as selection
+import src.topk as topk
 
 __all__ = [
     "Config",
