@@ -1,0 +1,31 @@
+{
+  "auto_map": {
+    "AutoConfig": "configuration_mistral_contrastive.MistralContrastiveConfig",
+    "AutoModel": "modeling_mistral_contrastive.MistralContrastiveModel"
+  },
+  "eos_token_id": 2,
+  "image_size": 336,
+  "ln_pre": true,
+  "logit_scale_init": 2.659260036932778,
+  "model_type": "mistral_contrastive",
+  "num_channels": 3,
+  "patch_size": 14,
+  "projection_dim": 1024,
+  "spatial_merge_size": 2,
+  "text_dim": 1792,
+  "text_head_dim": 128,
+  "text_intermediate_size": 4864,
+  "text_norm_eps": 1e-05,
+  "text_num_attention_heads": 14,
+  "text_num_hidden_layers": 14,
+  "text_rope_theta": 1000000.0,
+  "text_vocab_size": 131072,
+  "transformers_version": "5.8.0",
+  "vision_dim": 1024,
+  "vision_head_dim": 128,
+  "vision_intermediate_size": 4096,
+  "vision_norm_eps": 1e-05,
+  "vision_num_attention_heads": 8,
+  "vision_num_hidden_layers": 24,
+  "vision_rope_theta": 10000.0
+}
