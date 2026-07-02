@@ -1,0 +1,29 @@
+[property]
+gpu-id=0
+net-scale-factor=0.00392156862745098
+onnx-file=../weights/yolo26m.onnx
+# change the engine file names based on batch
+model-engine-file=../weights/yolo26m.onnx_b3_gpu0_fp32.engine
+#int8-calib-file=calib.table
+labelfile-path=../labels.txt
+batch-size=3
+network-mode=0 #FP32=0, FP16=2
+num-detected-classes=80
+interval=0
+gie-unique-id=1
+process-mode=1
+network-type=0
+cluster-mode=4
+maintain-aspect-ratio=1
+symmetric-padding=1
+#workspace-size=2000
+parse-bbox-func-name=NvDsInferParseYolo
+#parse-bbox-func-name=NvDsInferParseYoloCuda
+custom-lib-path=../../parser/libnvdsinfer_custom_impl_Yolo.so
+engine-create-func-name=NvDsInferYoloCudaEngineGet
+
+operate-on-class-ids=1;2;3;5;7
+
+[class-attrs-all]
+pre-cluster-threshold=0.25
+topk=300
